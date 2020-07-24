@@ -16,5 +16,6 @@
     <Rule Id="SA1400" Action="Error" />
     <Rule Id="SA1600" Action="None" />
     <Rule Id="SA1633" Action="None" />
+    <Rule Id="SA1028" Action="None" />
   </Rules>
 </RuleSet>
