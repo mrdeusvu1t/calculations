@@ -1,7 +1,8 @@
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace Calculations.Tests
 {
+    [TestFixture]
     public class CalculatorTests
     {
         [TestCase(6, 2.4499999999999997)]
@@ -11,7 +12,7 @@ namespace Calculations.Tests
         [TestCase(10_000_000, 16.695311365857272)]
         public void GetSumOneTests(int n, double expected)
         {
-            Assert.AreEqual(expected,Calculator.GetSumOne(n), double.Epsilon);
+            Assert.AreEqual(expected, Calculator.GetSumOne(n), double.Epsilon);
         }
         
         [TestCase(6, 0.3761904761904762)]
@@ -21,7 +22,7 @@ namespace Calculations.Tests
         [TestCase(10_000_000, 0.38629436111988125)]
         public void GetSumTwoTests(int n, double expected)
         {
-            Assert.AreEqual(expected,Calculator.GetSumTwo(n), double.Epsilon);
+            Assert.AreEqual(expected, Calculator.GetSumTwo(n), double.Epsilon);
         }
 
         [TestCase(6, 1.036790389660494)]
@@ -31,7 +32,7 @@ namespace Calculations.Tests
         [TestCase(10_000_000, 1.036927755143338)]
         public void GetSumThreeTests(int n, double expected)
         {
-            Assert.AreEqual(expected,Calculator.GetSumThree(n), double.Epsilon);
+            Assert.AreEqual(expected, Calculator.GetSumThree(n), double.Epsilon);
         }
         
         [TestCase(6, 0.19804657596199388)]
@@ -41,7 +42,7 @@ namespace Calculations.Tests
         [TestCase(10_000_000, 0.23370052513612405)]
         public void GetSumFourTests(int n, double expected)
         {
-            Assert.AreEqual(expected,Calculator.GetSumFour(n), double.Epsilon);
+            Assert.AreEqual(expected: expected, Calculator.GetSumFour(n), double.Epsilon);
         }
 
         [TestCase(6, 3.154706790123457)]
@@ -61,7 +62,7 @@ namespace Calculations.Tests
         [TestCase(10_000_000, -0.2146018116025734)]
         public void GetSumFiveTests(int n, double expected)
         {
-            Assert.AreEqual(expected,Calculator.GetSumFive(n), double.Epsilon);
+            Assert.AreEqual(expected, Calculator.GetSumFive(n), double.Epsilon);
         }
         
         [TestCase(6, 363.55835615201624)]
@@ -69,7 +70,7 @@ namespace Calculations.Tests
         [TestCase(100, 1.8173121424936406E+157)]
         public void GetSumSixTests(int n, double expected)
         {
-            Assert.AreEqual(expected,Calculator.GetSumSix(n), double.Epsilon);
+            Assert.AreEqual(expected, Calculator.GetSumSix(n), double.Epsilon);
         }
 
         [TestCase(1_000_000)]
