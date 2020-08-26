@@ -1,4 +1,4 @@
-﻿using NUnit.Framework;
+using NUnit.Framework;
 
 namespace Calculations.Tests
 {
@@ -93,7 +93,7 @@ namespace Calculations.Tests
         [TestCase(6, 98.23879465320995)]
         [TestCase(10, 104.20325304917145)]
         [TestCase(100, 113.7643137434921)]
-        public void GetSumTests(int n, double expected)
+        public void GetSumEightTests(int n, double expected)
         {
             Assert.AreEqual(expected, Calculator.GetSumEight(n), double.Epsilon);
         }
