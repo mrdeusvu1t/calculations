@@ -82,7 +82,7 @@ namespace Calculations
 
         /// <summary>
         /// Calculate the following sum
-        /// Sqrt(2 + Sqrt(2 + ... + Sqrt(2) ) ), where n > 0.
+        /// Sqrt(2 + Sqrt(2 + ... + Sqrt(2))), where n > 0.
         /// </summary>
         /// <param name="n">Number of elements.</param>
         /// <returns>Sum of elements.</returns>
